@@ -1,0 +1,3 @@
+
+	void WriteLogFile(char* szString);
+

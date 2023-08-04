@@ -1,0 +1,139 @@
+;------------------------------------------------------------------------
+; palmmdm.inf
+; For Windows2000/XP
+;
+; Copyright (c) 2007, June Fabrics Technology Inc.
+; http://www.junefabrics.com
+;
+;------------------------------------------------------------------------
+
+[Version]
+Signature=$CHICAGO$
+Class=Modem
+ClassGUID={4D36E96D-E325-11CE-BFC1-08002BE10318}
+Provider="June Fabrics Technology Inc."
+DriverVer= 03/07/2007, 4.0.0.0
+CatalogFile=pnetmdm.cat
+
+[Manufacturer]
+"JuneFabrics" = JF
+
+[JF]
+"PdaNet Modem" = Inst,pnetmdm
+
+[Inst]
+;CopyFiles = no need
+AddReg=All, GenericAddReg, Gen336Reg, INTERNAL, WDM
+
+
+[Inst.NT]
+CopyFiles = CopyFileSection
+AddReg=All, GenericAddReg, Gen336Reg, INTERNAL, NT
+
+
+[Inst.NT.Services]
+AddService = pnetmdm, 0x00000000, FakeModm_Service_Inst, FakeModm_Logging_Inst
+
+[Inst.NT.HW]
+AddReg = LowerFilterAddReg
+
+[LowerFilterAddReg]
+HKR,,"LowerFilters",0x00010000,pnetmdm
+
+[FakeModm_Service_Inst]
+DisplayName = "PdaNet Modem"
+ServiceType = 1
+StartType = 3
+ErrorControl = 0
+ServiceBinary = %12%\pnetmdm.sys
+
+[FakeModm_Logging_Inst]
+AddReg = FakeModm_Logging_Inst_AddReg
+
+[FakeModm_Logging_Inst_AddReg]
+HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\IoLogMsg.dll;%%SystemRoot%%\System32\drivers\pnetmdm.sys"
+HKR,,TypesSupported,0x0001001,7
+
+[SourceDisksNames]
+1=,"PdaNet Source Directory",,.
+
+[SourceDisksFiles]
+pnetmdm.sys = 1
+
+[CopyFileSection]
+pnetmdm.sys
+
+[DestinationDirs]
+DriverCopyfiles=12
+DefaultDestDir=12
+
+[All]
+HKR,,FriendlyDriver,,Unimodem.vxd
+HKR,,DevLoader,,*VCOMM
+HKR,,ConfigDialog,,modemui.dll
+HKR,,PortSubClass,1,02
+HKR,,EnumPropPages,,"modemui.dll,EnumPropPages"
+
+[NT]
+HKR,,"AttachedTo",0x00010000,"COM7"
+;HKR,,"FriendlyName",0x00010000,"PdaNet Modem"
+
+[Gen336Reg]
+HKR,, Properties, 1, 00,00,00,00, 00,00,00,00, 00,00,00,00, 00,00,00,00, 00,00,00,00, 00,00,00,00, 00,C2,01,00, 00,00,00,00
+
+[EXTERNAL]
+HKR,, DeviceType, 1, 01
+
+[INTERNAL]
+HKR,, DeviceType, 1, 02
+
+[WDM]
+HKR,, DeviceType, 1, 01
+HKR,,PortDriver,,wdmmdmld.vxd
+HKR,,Contention,0,
+
+[GenericAddReg]
+HKR, Init, 1,, "AT<cr>"
+HKR, Init, 2,, "ATE0V1<cr>"
+HKR, Monitor, 1,, "ATS0=0<cr>"
+HKR, Monitor, 2,, "None"
+HKR, Answer, 1,, "ATA<cr>"
+HKR, Hangup, 1,, "ATH<cr>"
+HKR,, Reset,, "ATZ<cr>"
+HKR, Settings, Prefix,, "AT"
+HKR, Settings, Terminator,, "<cr>"
+HKR, Settings, DialPrefix,, "D"
+HKR, Settings, Pulse,, "P"
+HKR, Settings, Tone,, "T"
+
+HKR, Settings, FlowControl_Off,,  ""
+HKR, Settings, FlowControl_Hard,, ""
+HKR, Settings, FlowControl_Soft,, ""
+
+
+HKR, Responses, "<cr>",        1, 01, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<lf>",        1, 01, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>OK<cr><lf>",          1, 00, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>RING<cr><lf>",        1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>NO CARRIER<cr><lf>",  1, 04, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>ERROR<cr><lf>",       1, 03, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>NO DIALTONE<cr><lf>", 1, 05, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>BUSY<cr><lf>",        1, 06, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>NO ANSWER<cr><lf>",   1, 07, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT<cr><lf>",     1, 02, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "0<cr>",       1, 00, 00, 00,00,00,00, 00,00,00,00 
+HKR, Responses, "2<cr>",       1, 08, 00, 00,00,00,00, 00,00,00,00 
+HKR, Responses, "3<cr>",       1, 04, 00, 00,00,00,00, 00,00,00,00 
+HKR, Responses, "4<cr>",       1, 03, 00, 00,00,00,00, 00,00,00,00 
+HKR, Responses, "6<cr>",       1, 05, 00, 00,00,00,00, 00,00,00,00 
+HKR, Responses, "7<cr>",       1, 06, 00, 00,00,00,00, 00,00,00,00 
+HKR, Responses, "8<cr>",       1, 07, 00, 00,00,00,00, 00,00,00,00 
+HKR, Responses, "OK",          1, 00, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "RING",        1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "NO CARRIER",  1, 04, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "ERROR",       1, 03, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "NO DIALTONE", 1, 05, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "NO DIAL TONE",1, 05, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "BUSY",        1, 06, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "NO ANSWER",   1, 07, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "CONNECT",                 1, 02, 00, 00,00,00,00, 00,00,00,00

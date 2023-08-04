@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="apkinstaller" Class="ServiceDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=218.25.54.28\SQL2008;Initial Catalog=apkinstaller;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="apkinstallerConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_admin" Member="tbl_admins">
+    <Type Name="tbl_admin">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="realname" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="mailaddress" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="imgpath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="role" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="regtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_user" Member="tbl_users">
+    <Type Name="tbl_user">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="parentid" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="userlevel" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_user_tbl_apkdownlog" Member="tbl_apkdownlogs" ThisKey="uid" OtherKey="userid" Type="tbl_apkdownlog" />
+      <Association Name="tbl_user_tbl_driverdownlog" Member="tbl_driverdownlogs" ThisKey="uid" OtherKey="userid" Type="tbl_driverdownlog" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_apkdownlog" Member="tbl_apkdownlogs">
+    <Type Name="tbl_apkdownlog">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="apkid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="downstartdate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="downenddate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="result" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_apkdownlog_tbl_apkdownlog" Member="tbl_apkdownlog2" ThisKey="uid" OtherKey="uid" Type="tbl_apkdownlog" Cardinality="One" />
+      <Association Name="tbl_apkdownlog_tbl_apkdownlog1" Member="tbl_apkdownlog4" ThisKey="uid" OtherKey="uid" Type="tbl_apkdownlog" Cardinality="One" />
+      <Association Name="tbl_apkdownlog_tbl_apkdownlog" Member="tbl_apkdownlog1" ThisKey="uid" OtherKey="uid" Type="tbl_apkdownlog" IsForeignKey="true" />
+      <Association Name="tbl_apkdownlog_tbl_apkdownlog1" Member="tbl_apkdownlog3" ThisKey="uid" OtherKey="uid" Type="tbl_apkdownlog" IsForeignKey="true" />
+      <Association Name="tbl_user_tbl_apkdownlog" Member="tbl_user" ThisKey="userid" OtherKey="uid" Type="tbl_user" IsForeignKey="true" />
+      <Association Name="tbl_apkinfo_tbl_apkdownlog" Member="tbl_apkinfo" ThisKey="apkid" OtherKey="uid" Type="tbl_apkinfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_apkgroup" Member="tbl_apkgroups">
+    <Type Name="tbl_apkgroup">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="gtype" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="userids" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="imgpath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="createtime" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_apkinfo" Member="tbl_apkinfos">
+    <Type Name="tbl_apkinfo">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="groupids" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="filepath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="imgpath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="filesize" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="version" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="property" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="createtime" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="showorder" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_apkinfo_tbl_apkdownlog" Member="tbl_apkdownlogs" ThisKey="uid" OtherKey="apkid" Type="tbl_apkdownlog" />
+      <Association Name="tbl_apkinfo_tbl_apkinstalllog" Member="tbl_apkinstalllogs" ThisKey="uid" OtherKey="apkid" Type="tbl_apkinstalllog" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_apkinstalllog" Member="tbl_apkinstalllogs">
+    <Type Name="tbl_apkinstalllog">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="apkid" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="apkname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="telid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="logtype" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="note" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="clientver" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="remoteip" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_apkinfo_tbl_apkinstalllog" Member="tbl_apkinfo" ThisKey="apkid" OtherKey="uid" Type="tbl_apkinfo" IsForeignKey="true" />
+      <Association Name="tbl_telinfo_tbl_apkinstalllog" Member="tbl_telinfo" ThisKey="telid" OtherKey="uid" Type="tbl_telinfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_apppatch" Member="tbl_apppatches">
+    <Type Name="tbl_apppatch">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="versionCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="versionName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="patchpath" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_authlog" Member="tbl_authlogs">
+    <Type Name="tbl_authlog">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="logintoken" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_driverdownlog" Member="tbl_driverdownlogs">
+    <Type Name="tbl_driverdownlog">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="driverid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="starttime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="endtime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="result" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_user_tbl_driverdownlog" Member="tbl_user" ThisKey="userid" OtherKey="uid" Type="tbl_user" IsForeignKey="true" />
+      <Association Name="tbl_driverinfo_tbl_driverdownlog" Member="tbl_driverinfo" ThisKey="driverid" OtherKey="uid" Type="tbl_driverinfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_driverinfo" Member="tbl_driverinfos">
+    <Type Name="tbl_driverinfo">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="telid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="sysver" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="filepath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_driverinfo_tbl_driverdownlog" Member="tbl_driverdownlogs" ThisKey="uid" OtherKey="driverid" Type="tbl_driverdownlog" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_telapps" Member="tbl_telapps">
+    <Type Name="tbl_telapp">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="telid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="appname" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="appversion" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="installtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_telinfo" Member="tbl_telinfos">
+    <Type Name="tbl_telinfo">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="type" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="vendor" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="sysver" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="serial" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="imei" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_telinfo_tbl_apkinstalllog" Member="tbl_apkinstalllogs" ThisKey="uid" OtherKey="telid" Type="tbl_apkinstalllog" />
+    </Type>
+  </Table>
+</Database>

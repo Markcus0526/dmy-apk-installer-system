@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PatchFiles>
+	<mandatory>
+		<updateitem>ApkInstaller.exe</updateitem>
+		<updateitem>aiadb.exe</updateitem>
+		<updateitem>APKAgent.apk</updateitem>
+		<updateitem>ADBWrapper.dll</updateitem>
+		<updateitem>DriverInstaller.dll</updateitem>
+		<updateitem>ApkPLUpdater.exe</updateitem>
+
+		<updateitem>zh-CN/ApkInstaller.resources.dll</updateitem>
+		<updateitem>Images/setting.png</updateitem>
+	</mandatory>
+	<optional>
+	</optional>
+</PatchFiles>

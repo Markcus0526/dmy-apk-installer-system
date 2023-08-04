@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApkInstallerService", "ApkInstallerService\ApkInstallerService.csproj", "{33519A94-ABE3-4884-986C-D47E1175ABDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33519A94-ABE3-4884-986C-D47E1175ABDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33519A94-ABE3-4884-986C-D47E1175ABDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33519A94-ABE3-4884-986C-D47E1175ABDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33519A94-ABE3-4884-986C-D47E1175ABDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

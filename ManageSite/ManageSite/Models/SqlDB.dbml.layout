@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12, 17.125" name="SqlDB">
+  <DataContextMoniker Name="/SqlDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3a2a03dd-09fb-41e7-a92f-8e9641902bca" absoluteBounds="6.75, 2, 2, 2.7324039713541661">
+      <DataClassMoniker Name="/SqlDBDataContext/tbl_admin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a06b1378-65c0-4808-b81a-26c14b33ca86" absoluteBounds="6.765, 2.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f7a8c098-4abf-4373-a739-b8cca30494d1" absoluteBounds="0.75, 3.875, 2, 1.9631982421874992">
+      <DataClassMoniker Name="/SqlDBDataContext/tbl_user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cabaa991-decd-4c67-8615-249d3599348f" absoluteBounds="0.765, 4.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4d378354-7023-45f0-aacd-6944e6eade96" absoluteBounds="3.5, 3.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/SqlDBDataContext/tbl_apkdownlog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f84174e-9a1f-4217-82da-a7574dff3128" absoluteBounds="3.515, 4.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f6d9292e-2319-4725-991c-a756da0d2d79" absoluteBounds="3.75, 7, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/SqlDBDataContext/tbl_apkgroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="38baddc8-3290-4252-b9ca-4c7a53522595" absoluteBounds="3.765, 7.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c864e539-b438-4759-abd8-418b5107f510" absoluteBounds="0.75, 10.375, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/SqlDBDataContext/tbl_apkinfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3bdcd1a4-b36b-48eb-8d22-402bd4e46d36" absoluteBounds="0.765, 10.835, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aa597a06-4e74-41b9-a2e6-e3dd6b93dcdf" absoluteBounds="3.5, 10.25, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/SqlDBDataContext/tbl_apkinstalllog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9fbfb257-9dcf-40d4-a413-eb4ee5a1cd41" absoluteBounds="3.515, 10.71, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="83095c6a-eeef-4183-80b2-b512785aa714" absoluteBounds="6.75, 6, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/SqlDBDataContext/tbl_apppatch" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a63e308d-80a3-4de0-b7c5-5e00a56825c0" absoluteBounds="6.765, 6.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9bae9446-e27c-4c5c-b61f-79735f8dc7ce" absoluteBounds="6.75, 9, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/SqlDBDataContext/tbl_authlog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2a730d8c-4fc0-4540-8c13-aeb78e197b6b" absoluteBounds="6.765, 9.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cd2eeaa9-3f4c-4e9a-a988-93aae9bc058c" absoluteBounds="3.5, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/SqlDBDataContext/tbl_driverdownlog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="90858380-4506-4c15-bd29-9f1e7da4aeb1" absoluteBounds="3.515, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="630ecf37-dd06-4b57-be62-716dff19a2d9" absoluteBounds="0.75, 6.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/SqlDBDataContext/tbl_driverinfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6cbc9774-ece1-4f43-9177-17df2cf37e47" absoluteBounds="0.765, 7.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="35fde4d6-d969-4e68-9a86-5a83e3fab81b" absoluteBounds="9.75, 2, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/SqlDBDataContext/tbl_telapp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0e7b93f6-637d-4930-a71b-447dd3d9f1b7" absoluteBounds="9.765, 2.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="def64203-a658-480e-9df9-b2b864a111fd" absoluteBounds="0.75, 14.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/SqlDBDataContext/tbl_telinfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3b991233-8747-42c4-b525-976d383c7819" absoluteBounds="0.765, 15.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.20923076923077 : 5.90549967447917); (4.20923076923077 : 6.15549967447917); (4.80461538461539 : 6.15549967447917); (4.80461538461539 : 5.90549967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SqlDBDataContext/tbl_apkdownlog/tbl_apkdownlog_tbl_apkdownlog" />
+      <nodes>
+        <classShapeMoniker Id="4d378354-7023-45f0-aacd-6944e6eade96" />
+        <classShapeMoniker Id="4d378354-7023-45f0-aacd-6944e6eade96" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.20923076923077 : 3.75); (4.20923076923077 : 3.5); (4.80461538461539 : 3.5); (4.80461538461539 : 3.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SqlDBDataContext/tbl_apkdownlog/tbl_apkdownlog_tbl_apkdownlog1" />
+      <nodes>
+        <classShapeMoniker Id="4d378354-7023-45f0-aacd-6944e6eade96" />
+        <classShapeMoniker Id="4d378354-7023-45f0-aacd-6944e6eade96" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.85659912109375); (3.04166666666667 : 4.85659912109375 : JumpStart); (3.20833333333333 : 4.85659912109375 : JumpEnd); (3.22916666666667 : 4.85659912109375 : JumpStart); (3.39583333333333 : 4.85659912109375 : JumpEnd); (3.5 : 4.85659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SqlDBDataContext/tbl_user/tbl_user_tbl_apkdownlog" />
+      <nodes>
+        <classShapeMoniker Id="f7a8c098-4abf-4373-a739-b8cca30494d1" />
+        <classShapeMoniker Id="4d378354-7023-45f0-aacd-6944e6eade96" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 10.3765374615385); (3.125 : 10.0015374615385); (3.125 : 4.27204756054688); (3.22916666666667 : 4.27204756054687 : JumpStart); (3.39583333333333 : 4.27204756054688 : JumpEnd); (3.5 : 4.27204756054688)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SqlDBDataContext/tbl_apkinfo/tbl_apkinfo_tbl_apkdownlog" />
+      <nodes>
+        <classShapeMoniker Id="c864e539-b438-4759-abd8-418b5107f510" />
+        <classShapeMoniker Id="4d378354-7023-45f0-aacd-6944e6eade96" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 11.8693739325921); (3.5 : 11.8693739325921)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SqlDBDataContext/tbl_apkinfo/tbl_apkinfo_tbl_apkinstalllog" />
+      <nodes>
+        <classShapeMoniker Id="c864e539-b438-4759-abd8-418b5107f510" />
+        <classShapeMoniker Id="aa597a06-4e74-41b9-a2e6-e3dd6b93dcdf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 3.875); (1.75 : 1.82774983723958); (3.5 : 1.82774983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SqlDBDataContext/tbl_user/tbl_user_tbl_driverdownlog" />
+      <nodes>
+        <classShapeMoniker Id="f7a8c098-4abf-4373-a739-b8cca30494d1" />
+        <classShapeMoniker Id="cd2eeaa9-3f4c-4e9a-a988-93aae9bc058c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.81307592307692); (3.06607443490112 : 6.4970014881758 : JumpStart); (3.18392556509888 : 6.37915035797804 : JumpEnd); (3.3125 : 6.25057592307692); (3.3125 : 2.39787675585937); (3.5 : 2.39787675585937)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SqlDBDataContext/tbl_driverinfo/tbl_driverinfo_tbl_driverdownlog" />
+      <nodes>
+        <classShapeMoniker Id="630ecf37-dd06-4b57-be62-716dff19a2d9" />
+        <classShapeMoniker Id="cd2eeaa9-3f4c-4e9a-a988-93aae9bc058c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 15.8277498372396); (4.5 : 15.8277498372396); (4.5 : 13.3670068359375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SqlDBDataContext/tbl_telinfo/tbl_telinfo_tbl_apkinstalllog" />
+      <nodes>
+        <classShapeMoniker Id="def64203-a658-480e-9df9-b2b864a111fd" />
+        <classShapeMoniker Id="aa597a06-4e74-41b9-a2e6-e3dd6b93dcdf" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

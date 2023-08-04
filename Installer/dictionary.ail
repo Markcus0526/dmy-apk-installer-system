@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DICTIONARY type="multilanguage">
+  <!-- AI defaults -->
+  <ENTRY id="AI.LaunchCondition.No9X">
+    <STRING lang="zh" value="[ProductName]无法安装，因为同一个版本已经安装了在[WindowsType9XDisplay]"/>
+  </ENTRY>
+  <ENTRY id="AI.LaunchCondition.NoSpecificNT">
+    <STRING lang="zh" value="[ProductName]无法安装在此操作系统版本: [WindowsTypeNTDisplay]"/>
+  </ENTRY>
+  <!-- Property table -->
+  <ENTRY id="Property.Manufacturer">
+    <STRING lang="zh" value="德铭源科技有限公司"/>
+  </ENTRY>
+  <ENTRY id="Property.ProductName">
+    <STRING lang="zh" value="摇钱助手"/>
+  </ENTRY>
+  <ENTRY id="Shortcut.Name.ApkInstaller">
+    <STRING lang="zh" value="摇钱助手"/>
+  </ENTRY>
+  <ENTRY id="Shortcut.Name.ApkInstaller_1">
+    <STRING lang="zh" value="摇钱助手"/>
+  </ENTRY>
+  <ENTRY id="Shortcut.Name.UninstallApkInstaller">
+    <STRING lang="zh" value="卸载摇钱助手"/>
+  </ENTRY>
+</DICTIONARY>

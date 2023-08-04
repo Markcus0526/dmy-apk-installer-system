@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12, 17.125" name="ServiceDB">
+  <DataContextMoniker Name="/ServiceDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b9b73486-3934-40f1-bba1-9c111bd7d2f3" absoluteBounds="6.75, 2, 2, 2.7324039713541661">
+      <DataClassMoniker Name="/ServiceDBDataContext/tbl_admin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3abdacd1-16df-4d31-98f7-be56d67abb2a" absoluteBounds="6.765, 2.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3c3d0d44-42b8-4307-aa57-28c8274d78e8" absoluteBounds="0.75, 3.875, 2, 1.9631982421874992">
+      <DataClassMoniker Name="/ServiceDBDataContext/tbl_user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8eb181e6-a7a2-404c-99a5-91adaff49f52" absoluteBounds="0.765, 4.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1b19a57b-1d3c-434e-985e-564b027b3ea9" absoluteBounds="3.5, 3.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ServiceDBDataContext/tbl_apkdownlog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4708a9fc-9055-4c33-a331-fec0bbf1382c" absoluteBounds="3.515, 4.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e0ac95a4-d98e-4b14-b83f-9b4e289a8922" absoluteBounds="3.75, 7, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ServiceDBDataContext/tbl_apkgroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cebbc1b4-c2bf-4c50-b94a-b7018ad54398" absoluteBounds="3.765, 7.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="28134b4c-05f5-4ee9-917a-05d15695f304" absoluteBounds="0.75, 10.375, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/ServiceDBDataContext/tbl_apkinfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3173a745-0f24-44f3-9dc9-d81bb6aa4ffe" absoluteBounds="0.765, 10.835, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4f2b5461-ed1d-439c-8086-295ad2557d78" absoluteBounds="3.5, 10.25, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/ServiceDBDataContext/tbl_apkinstalllog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="52443810-3d17-48bd-b77b-9151bd27727d" absoluteBounds="3.515, 10.71, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ce38b066-06a1-4257-bddc-cec9967d5c3b" absoluteBounds="6.75, 6, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/ServiceDBDataContext/tbl_apppatch" />
+      <nestedChildShapes>
+        <elementListCompartment Id="30aaf10b-6086-4626-8a09-b62f528ae69d" absoluteBounds="6.765, 6.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ced37915-8eb1-47b7-aa4e-a70f3a1a7a38" absoluteBounds="6.75, 9, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ServiceDBDataContext/tbl_authlog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="19ae9f0d-1369-4e95-a618-2d1e6886b437" absoluteBounds="6.765, 9.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0c13a778-a063-4b35-8ee8-8b662db0524a" absoluteBounds="3.5, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ServiceDBDataContext/tbl_driverdownlog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="35c138f3-b066-47d8-bee4-5807778f400e" absoluteBounds="3.515, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2e26485d-2531-428a-a7d4-22321d6bb35d" absoluteBounds="0.75, 6.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ServiceDBDataContext/tbl_driverinfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f83e6bea-da7c-441e-8488-bcaadf605aa2" absoluteBounds="0.765, 7.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4b7e4d6d-7f6e-4a78-9d4e-78c315231f3c" absoluteBounds="9.75, 2, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/ServiceDBDataContext/tbl_telapp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="665cc5a7-e389-4b8b-93be-ba0ff1c15d85" absoluteBounds="9.765, 2.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1b3d57d3-ddb8-46dd-803a-83d8e9d1f97b" absoluteBounds="0.75, 14.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ServiceDBDataContext/tbl_telinfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d255d384-77f1-422e-83bd-e58706f31f5f" absoluteBounds="0.765, 15.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.20923076923077 : 5.90549967447917); (4.20923076923077 : 6.15549967447917); (4.80461538461539 : 6.15549967447917); (4.80461538461539 : 5.90549967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ServiceDBDataContext/tbl_apkdownlog/tbl_apkdownlog_tbl_apkdownlog" />
+      <nodes>
+        <classShapeMoniker Id="1b19a57b-1d3c-434e-985e-564b027b3ea9" />
+        <classShapeMoniker Id="1b19a57b-1d3c-434e-985e-564b027b3ea9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.20923076923077 : 3.75); (4.20923076923077 : 3.5); (4.80461538461539 : 3.5); (4.80461538461539 : 3.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ServiceDBDataContext/tbl_apkdownlog/tbl_apkdownlog_tbl_apkdownlog1" />
+      <nodes>
+        <classShapeMoniker Id="1b19a57b-1d3c-434e-985e-564b027b3ea9" />
+        <classShapeMoniker Id="1b19a57b-1d3c-434e-985e-564b027b3ea9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.85659912109375); (3.04166666666667 : 4.85659912109375 : JumpStart); (3.20833333333333 : 4.85659912109375 : JumpEnd); (3.22916666666667 : 4.85659912109375 : JumpStart); (3.39583333333333 : 4.85659912109375 : JumpEnd); (3.5 : 4.85659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ServiceDBDataContext/tbl_user/tbl_user_tbl_apkdownlog" />
+      <nodes>
+        <classShapeMoniker Id="3c3d0d44-42b8-4307-aa57-28c8274d78e8" />
+        <classShapeMoniker Id="1b19a57b-1d3c-434e-985e-564b027b3ea9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 10.3765374615385); (3.125 : 10.0015374615385); (3.125 : 4.27204756054688); (3.22916666666667 : 4.27204756054687 : JumpStart); (3.39583333333333 : 4.27204756054688 : JumpEnd); (3.5 : 4.27204756054688)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ServiceDBDataContext/tbl_apkinfo/tbl_apkinfo_tbl_apkdownlog" />
+      <nodes>
+        <classShapeMoniker Id="28134b4c-05f5-4ee9-917a-05d15695f304" />
+        <classShapeMoniker Id="1b19a57b-1d3c-434e-985e-564b027b3ea9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 11.8693739325921); (3.5 : 11.8693739325921)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ServiceDBDataContext/tbl_apkinfo/tbl_apkinfo_tbl_apkinstalllog" />
+      <nodes>
+        <classShapeMoniker Id="28134b4c-05f5-4ee9-917a-05d15695f304" />
+        <classShapeMoniker Id="4f2b5461-ed1d-439c-8086-295ad2557d78" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 3.875); (1.75 : 1.82774983723958); (3.5 : 1.82774983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ServiceDBDataContext/tbl_user/tbl_user_tbl_driverdownlog" />
+      <nodes>
+        <classShapeMoniker Id="3c3d0d44-42b8-4307-aa57-28c8274d78e8" />
+        <classShapeMoniker Id="0c13a778-a063-4b35-8ee8-8b662db0524a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.81307592307692); (3.06607443490112 : 6.4970014881758 : JumpStart); (3.18392556509888 : 6.37915035797804 : JumpEnd); (3.3125 : 6.25057592307692); (3.3125 : 2.39787675585937); (3.5 : 2.39787675585937)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ServiceDBDataContext/tbl_driverinfo/tbl_driverinfo_tbl_driverdownlog" />
+      <nodes>
+        <classShapeMoniker Id="2e26485d-2531-428a-a7d4-22321d6bb35d" />
+        <classShapeMoniker Id="0c13a778-a063-4b35-8ee8-8b662db0524a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 15.8277498372396); (4.5 : 15.8277498372396); (4.5 : 13.3670068359375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ServiceDBDataContext/tbl_telinfo/tbl_telinfo_tbl_apkinstalllog" />
+      <nodes>
+        <classShapeMoniker Id="1b3d57d3-ddb8-46dd-803a-83d8e9d1f97b" />
+        <classShapeMoniker Id="4f2b5461-ed1d-439c-8086-295ad2557d78" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

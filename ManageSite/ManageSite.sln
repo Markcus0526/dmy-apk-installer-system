@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManageSite", "ManageSite\ManageSite.csproj", "{2F3C080C-9C9A-46EA-92EC-2AB99EFEC0AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcSiteMapProvider", "MvcSiteMapProvider\MvcSiteMapProvider.csproj", "{80A397D7-7BDD-4538-8D87-34E90B4FB4B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F3C080C-9C9A-46EA-92EC-2AB99EFEC0AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F3C080C-9C9A-46EA-92EC-2AB99EFEC0AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F3C080C-9C9A-46EA-92EC-2AB99EFEC0AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F3C080C-9C9A-46EA-92EC-2AB99EFEC0AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80A397D7-7BDD-4538-8D87-34E90B4FB4B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80A397D7-7BDD-4538-8D87-34E90B4FB4B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80A397D7-7BDD-4538-8D87-34E90B4FB4B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80A397D7-7BDD-4538-8D87-34E90B4FB4B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

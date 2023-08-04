@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">APKAgent</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="congratulations">祝贺您！</string>
+    <string name="check_new_apk">所有任务已完成，请您查看新安装应用。</string>
+    <string name="confirm">确认</string>
+</resources>

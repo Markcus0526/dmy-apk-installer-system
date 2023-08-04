@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AlreadyExistApk" xml:space="preserve">
+    <value>本设备上已经存在同一个版本的app.</value>
+  </data>
+  <data name="APKInstaller" xml:space="preserve">
+    <value>摇钱助手</value>
+  </data>
+  <data name="APK_INVALID_USER" xml:space="preserve">
+    <value>用户名不正确，请再试一下!</value>
+  </data>
+  <data name="APK_NETWORK_FAIL" xml:space="preserve">
+    <value>网路错误! 无法连接APK批量安装服务器。</value>
+  </data>
+  <data name="APK_UNKNOWN_ERR" xml:space="preserve">
+    <value>未知错误! 很抱歉，未发现错误原因。</value>
+  </data>
+  <data name="Application" xml:space="preserve">
+    <value>应用程序</value>
+  </data>
+  <data name="ApplicationTotal" xml:space="preserve">
+    <value>应用程序 {0}个 共计: {1}</value>
+  </data>
+  <data name="AutoRemove" xml:space="preserve">
+    <value>自动卸载</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CannotConnectAgent" xml:space="preserve">
+    <value>无法连接手机APKAGENT.</value>
+  </data>
+  <data name="GroupMainSetting" xml:space="preserve">
+    <value>基本设置</value>
+  </data>
+  <data name="GroupSelectLanguage" xml:space="preserve">
+    <value>选择语言</value>
+  </data>
+  <data name="CheckProgramExit" xml:space="preserve">
+    <value>点击关闭时退出程序</value>
+  </data>
+  <data name="CheckProgramOther" xml:space="preserve">
+    <value>与其他助手共享设备连接</value>
+  </data>
+  <data name="CheckProgramTask" xml:space="preserve">
+    <value>任务完成时在手机上响铃提示</value>
+  </data>
+  <data name="CheckSavePassword" xml:space="preserve">
+    <value>记住密码</value>
+  </data>
+  <data name="ChooseLanguage" xml:space="preserve">
+    <value>选择语言</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>清空</value>
+  </data>
+  <data name="Connected" xml:space="preserve">
+    <value>连接到设备</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="DataAnalysis" xml:space="preserve">
+    <value>数据统计</value>
+  </data>
+  <data name="DeleteTempOnDevice" xml:space="preserve">
+    <value>正在清除临时文件...</value>
+  </data>
+  <data name="ExceptionInstallApkOnDevice" xml:space="preserve">
+    <value>发生了错误在安装过程</value>
+  </data>
+  <data name="FailToConnect" xml:space="preserve">
+    <value>连接失败</value>
+  </data>
+  <data name="FailToConnectDetail" xml:space="preserve">
+    <value>无法获取安卓设备信息。</value>
+  </data>
+  <data name="FinishInstallApkOnDevice" xml:space="preserve">
+    <value>安装任务完成！</value>
+  </data>
+  <data name="FinishUninstallApkOnDevice" xml:space="preserve">
+    <value>卸载任务完成！</value>
+  </data>
+  <data name="GroupInstallFinished" xml:space="preserve">
+    <value>批量安装完成!</value>
+  </data>
+  <data name="InstalledApkOnDevice" xml:space="preserve">
+    <value>安装‘{0}’成功！</value>
+  </data>
+  <data name="InstalledOnDevice" xml:space="preserve">
+    <value>安装‘{0}’完成!</value>
+  </data>
+  <data name="InstallingApkOnDevice" xml:space="preserve">
+    <value>正在安装‘{0}’中的 ‘{1}’...</value>
+  </data>
+  <data name="InstallingIOnNApk" xml:space="preserve">
+    <value>正在安装‘{0}’ ({1}/{2})...</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>加载中...</value>
+  </data>
+  <data name="LoadingApkOnDevice" xml:space="preserve">
+    <value>正在加载‘{0}’到设备[{1}/{2}]...</value>
+  </data>
+  <data name="LoadingDeviceInformation" xml:space="preserve">
+    <value>正在等待系统启动...</value>
+  </data>
+  <data name="LoggingNow" xml:space="preserve">
+    <value>正在登录...</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="MSG_NEED_DEVICE" xml:space="preserve">
+    <value>请连接安卓设备</value>
+  </data>
+  <data name="MSG_STILL_DOWNLOAD" xml:space="preserve">
+    <value>请等待下载文件 ({0}个安装包还没下载完了.)</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="OneClickInstall" xml:space="preserve">
+    <value>一键安装</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="PreparingInstall" xml:space="preserve">
+    <value>正在准备安装...</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>记住密码</value>
+  </data>
+  <data name="RequireUsername" xml:space="preserve">
+    <value>请输入用户名</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="StopInstall" xml:space="preserve">
+    <value>停止安装</value>
+  </data>
+  <data name="ThisMonth" xml:space="preserve">
+    <value>本月</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>今日</value>
+  </data>
+  <data name="UninstallApkFail" xml:space="preserve">
+    <value>卸载'{0}'失败.</value>
+  </data>
+  <data name="UninstalledApkOnDevice" xml:space="preserve">
+    <value>卸载‘{0}’成功！</value>
+  </data>
+  <data name="UninstallingApkOnDevice" xml:space="preserve">
+    <value>正在卸载 '{0}'...</value>
+  </data>
+  <data name="UninstallingIOnNApk" xml:space="preserve">
+    <value>正在卸载已安装的‘{0}’({1}/{2})...</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>未知</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="ApkInstallList" xml:space="preserve">
+    <value>  应用安装列表</value>
+  </data>
+  <data name="DeviceInstallList" xml:space="preserve">
+    <value>  出货机型</value>
+  </data>
+  <data name="AllStatistics" xml:space="preserve">
+    <value>所有统计</value>
+  </data>
+  <data name="Level2UserStatistics" xml:space="preserve">
+    <value>二级代理统计</value>
+  </data>
+  <data name="ProgramMinimized" xml:space="preserve">
+    <value>系统正在后台运行</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="DeviceBrander" xml:space="preserve">
+    <value>品牌:</value>
+  </data>
+  <data name="DeviceModel" xml:space="preserve">
+    <value>型号:</value>
+  </data>
+  <data name="DeviceManage" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="DeviceInstallPosition" xml:space="preserve">
+    <value>安装位置</value>
+  </data>
+  <data name="DeviceInstallAuto" xml:space="preserve">
+    <value>自动</value>
+  </data>
+  <data name="DeviceInstallPhone" xml:space="preserve">
+    <value>手机</value>
+  </data>
+  <data name="DeviceInstallSD" xml:space="preserve">
+    <value>SD卡</value>
+  </data>
+  <data name="DeviceRestart" xml:space="preserve">
+    <value>重启</value>
+  </data>
+  <data name="DeviceDetail" xml:space="preserve">
+    <value>详情</value>
+  </data>
+  <data name="DeviceManageRefresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="DeviceManageAllSelect" xml:space="preserve">
+    <value>全选</value>
+  </data>
+  <data name="DeviceManageAllUnselect" xml:space="preserve">
+    <value>反选</value>
+  </data>
+  <data name="DeviceManageUninstall" xml:space="preserve">
+    <value>卸载</value>
+  </data>
+  <data name="DeviceManageAdd" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="DeviceManageBack" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="DeviceManageApkName" xml:space="preserve">
+    <value>软件名</value>
+  </data>
+  <data name="DeviceManageApkVersion" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="DeviceManageApkType" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="DeviceManageApkSize" xml:space="preserve">
+    <value>大小</value>
+  </data>
+  <data name="DeviceManageApkInstallTime" xml:space="preserve">
+    <value>安装时间</value>
+  </data>
+  <data name="DeviceSharingRetry" xml:space="preserve">
+    <value>重试</value>
+  </data>
+  <data name="DeviceSharingForceClose" xml:space="preserve">
+    <value>强制关闭</value>
+  </data>
+  <data name="DeviceSharingShare" xml:space="preserve">
+    <value>共享模式</value>
+  </data>
+  <data name="DeviceSharingDescription" xml:space="preserve">
+    <value>请关闭该手机助手，然后点击[重试]: </value>
+  </data>
+  <data name="ConfirmExitGroupAction" xml:space="preserve">
+    <value>关闭动作</value>
+  </data>
+  <data name="ConfirmExitDirectExit" xml:space="preserve">
+    <value>直接退出程序</value>
+  </data>
+  <data name="ConfirmExitMinimizeToTray" xml:space="preserve">
+    <value>最小化到托盘</value>
+  </data>
+  <data name="ConfirmExitNoRetry" xml:space="preserve">
+    <value>不再提示</value>
+  </data>
+  <data name="ConfirmExitOk" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ConfirmExitCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="FirstGradeAgent" xml:space="preserve">
+    <value>一级代理 : </value>
+  </data>
+  <data name="SecondGradeAgent" xml:space="preserve">
+    <value>二级代理 : </value>
+  </data>
+  <data name="AlreadyConnected" xml:space="preserve">
+    <value>本设备曾经连接过此应用</value>
+  </data>
+  <data name="AlreadyConnectedNotAvailable" xml:space="preserve">
+    <value>本设备曾经安装过应用，如果以前不是您本人安装，则装机不急收益</value>
+  </data>
+  <data name="NotExistSDCard" xml:space="preserve">
+    <value>存储不存在</value>
+  </data>
+  <data name="UnableToLoadApk" xml:space="preserve">
+    <value>无法加载apk文件，应用安装失败</value>
+  </data>
+  <data name="UpgradeApkOnDevice" xml:space="preserve">
+    <value>更新‘{0}’成功！</value>
+  </data>
+  <data name="INSTALL_FAILED_INSUFFICIENT_STORAGE" xml:space="preserve">
+    <value>存储空间不足，应用安装失败</value>
+  </data>
+  <data name="NewVersion" xml:space="preserve">
+    <value>新版本</value>
+  </data>
+  <data name="YouCanUpgradeNewVersion" xml:space="preserve">
+    <value>您可以升级到：{0}，是否需要升级？</value>
+  </data>
+  <data name="Paused" xml:space="preserve">
+    <value>暂停中</value>
+  </data>
+  <data name="RebootingNow" xml:space="preserve">
+    <value>正在准备重新启动...</value>
+  </data>
+  <data name="INSTALL_FAILED_ACWF_INCOMPATIBLE" xml:space="preserve">
+    <value>可能是存储空间不足，请卸载一些垃圾应用再试试</value>
+  </data>
+  <data name="INSTALL_FAILED_DEXOPT" xml:space="preserve">
+    <value>dex优化验证失败</value>
+  </data>
+  <data name="INSTALL_FAILED_MEDIA_UNAVAILABLE" xml:space="preserve">
+    <value>SD卡不存在</value>
+  </data>
+  <data name="APK_INCORRECT_PWD" xml:space="preserve">
+    <value>密码不准确，请在确认！</value>
+  </data>
+  <data name="CPU_ABIINSTALL_FAILED_MISSING_FEATURE" xml:space="preserve">
+    <value>使用了一个无效的特性</value>
+  </data>
+  <data name="INSTALL_FAILED_CONFLICTING_PROVIDER" xml:space="preserve">
+    <value>存在同名的内容提供者</value>
+  </data>
+  <data name="INSTALL_FAILED_CONTAINER_ERROR" xml:space="preserve">
+    <value>SD卡访问失败</value>
+  </data>
+  <data name="INSTALL_FAILED_CPU_ABI_INCOMPATIBLE" xml:space="preserve">
+    <value>包含的本机代码不兼容</value>
+  </data>
+  <data name="INSTALL_FAILED_DUPLICATE_PACKAGE" xml:space="preserve">
+    <value>已存在同名程序</value>
+  </data>
+  <data name="INSTALL_FAILED_INTERNAL_ERROR" xml:space="preserve">
+    <value>系统问题导致安装失败</value>
+  </data>
+  <data name="INSTALL_FAILED_INVALID_APK" xml:space="preserve">
+    <value>无效的APK</value>
+  </data>
+  <data name="INSTALL_FAILED_INVALID_INSTALL_LOCATION" xml:space="preserve">
+    <value>无效的安装路径</value>
+  </data>
+  <data name="INSTALL_FAILED_INVALID_URI" xml:space="preserve">
+    <value>无效的链接</value>
+  </data>
+  <data name="INSTALL_FAILED_MISSING_SHARED_LIBRARY" xml:space="preserve">
+    <value>需求的共享库已丢失</value>
+  </data>
+  <data name="INSTALL_FAILED_NEWER_SDK" xml:space="preserve">
+    <value>系统版本过新</value>
+  </data>
+  <data name="INSTALL_FAILED_NO_SHARED_USER" xml:space="preserve">
+    <value>要求的共享用户不存在</value>
+  </data>
+  <data name="INSTALL_FAILED_OLDER_SDK" xml:space="preserve">
+    <value>系统版本过旧</value>
+  </data>
+  <data name="INSTALL_FAILED_REPLACE_COULDNT_DELETE" xml:space="preserve">
+    <value>需求的共享库无效</value>
+  </data>
+  <data name="INSTALL_FAILED_SHARED_USER_INCOMPATIBLE" xml:space="preserve">
+    <value>需求的共享用户签名错误</value>
+  </data>
+  <data name="INSTALL_FAILED_TEST_ONLY" xml:space="preserve">
+    <value>调用者不被允许测试的测试程序</value>
+  </data>
+  <data name="INSTALL_FAILED_UPDATE_INCOMPATIBLE" xml:space="preserve">
+    <value>版本不能共存</value>
+  </data>
+</root>

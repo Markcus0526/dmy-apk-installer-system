@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvcSiteMap xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-2.0" enableLocalization="true">
+  <mvcSiteMapNode title="$resources:SiteMapLocalizations,HomeTitle" controller="Home" action="Index" changeFrequency="Always" updatePriority="Normal" lastModifiedDate="2002-05-30T09:00:00">
+    <mvcSiteMapNode icon="icon-folder-open" title="$resources:SiteMapLocalizations,ApkInstallTitle" controller="Apk" action="index">
+      <mvcSiteMapNode title="$resources:SiteMapLocalizations,ApkAddtitle" action="add"/>
+      <mvcSiteMapNode title="$resources:SiteMapLocalizations,ApkListtitle" action="List"/>
+      <mvcSiteMapNode title="$resources:SiteMapLocalizations,ApkAddSettitle" action="AddPackage"/>
+      <mvcSiteMapNode title="$resources:SiteMapLocalizations,ApkSetListtitle" action="PackageList"/>
+      <mvcSiteMapNode title="$resources:SiteMapLocalizations,ApkDownloadHistitle" action="DownLog"/>
+      <mvcSiteMapNode title="$resources:SiteMapLocalizations,ApkInstallHistitle" action="InstallLog"/>
+    </mvcSiteMapNode>
+    <mvcSiteMapNode icon="icon-briefcase" title="$resources:SiteMapLocalizations,PhoneTitle" controller="Phone" action="index">
+      <mvcSiteMapNode title="$resources:SiteMapLocalizations,PhoneAddtitle" action="add"/>
+      <mvcSiteMapNode title="$resources:SiteMapLocalizations,PhoneListtitle" action="list"/>
+      <!--<mvcSiteMapNode title="$resources:SiteMapLocalizations,PhoneApptitle" action="Apps"/>-->
+    </mvcSiteMapNode>
+    <mvcSiteMapNode icon="icon-briefcase" title="$resources:SiteMapLocalizations,DriverTitle" controller="Driver" action="index">
+      <mvcSiteMapNode title="$resources:SiteMapLocalizations,DriverAddTitle" action="Add"/>
+      <mvcSiteMapNode title="$resources:SiteMapLocalizations,DriverListTitle" action="List"/>
+      <mvcSiteMapNode title="$resources:SiteMapLocalizations,DriverDownLogTitle" action="DownLog"/>
+    </mvcSiteMapNode>
+    <mvcSiteMapNode icon="icon-cogs" title="$resources:SiteMapLocalizations,ClientTitle" controller="AppPatch" action="index">
+      <mvcSiteMapNode title="$resources:SiteMapLocalizations,AppPatchAddTitle" action="add"/>
+      <mvcSiteMapNode title="$resources:SiteMapLocalizations,AppPatchListTitle" action="list"/>
+    </mvcSiteMapNode>
+    <mvcSiteMapNode icon="icon-user" title="$resources:SiteMapLocalizations,UserTitle" controller="User" action="index">
+      <mvcSiteMapNode title="$resources:SiteMapLocalizations,UserAddtitle" action="add"/>
+      <mvcSiteMapNode title="$resources:SiteMapLocalizations,UserListtitle" action="list"/>
+    </mvcSiteMapNode>
+    <mvcSiteMapNode icon="icon-cogs" title="$resources:SiteMapLocalizations,SystemTitle" controller="Admin" action="index">
+      <mvcSiteMapNode title="$resources:SiteMapLocalizations,AdminAddtitle" action="add"/>
+      <mvcSiteMapNode title="$resources:SiteMapLocalizations,AdminListtitle" action="list"/>
+    </mvcSiteMapNode>
+  </mvcSiteMapNode>
+</mvcSiteMap>

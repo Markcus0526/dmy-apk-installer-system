@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DICTIONARY type="multilanguage" ignore="en">
+  <ENTRY id="Property.ARPCOMMENTS">
+    <STRING lang="en" value="This installer database contains the logic and data required to install [|ProductName]."/>
+    <STRING lang="zh" value=""/>
+  </ENTRY>
+  <ENTRY id="Property.Manufacturer">
+    <STRING lang="en" value="damytech"/>
+    <STRING lang="zh" value=""/>
+  </ENTRY>
+  <ENTRY id="Property.ProductName">
+    <STRING lang="en" value="Apk Installer"/>
+    <STRING lang="zh" value=""/>
+  </ENTRY>
+</DICTIONARY>

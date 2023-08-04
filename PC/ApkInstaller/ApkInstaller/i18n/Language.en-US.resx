@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AlreadyExistApk" xml:space="preserve">
+    <value>Already exists the same version app on the device.</value>
+  </data>
+  <data name="APKInstaller" xml:space="preserve">
+    <value>Shake money helper</value>
+  </data>
+  <data name="APK_INVALID_USER" xml:space="preserve">
+    <value>Username is incorrect, please try again!</value>
+  </data>
+  <data name="APK_NETWORK_FAIL" xml:space="preserve">
+    <value>Network error! Cannot connect to the apk service.</value>
+  </data>
+  <data name="APK_UNKNOWN_ERR" xml:space="preserve">
+    <value>Unknown error! So sorry, application not found correct reason.</value>
+  </data>
+  <data name="Application" xml:space="preserve">
+    <value>Application</value>
+  </data>
+  <data name="ApplicationTotal" xml:space="preserve">
+    <value>{0} applications, Total: {1}</value>
+  </data>
+  <data name="AutoRemove" xml:space="preserve">
+    <value>Remove automatically</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CannotConnectAgent" xml:space="preserve">
+    <value>Cannot connect to apk agent.</value>
+  </data>
+  <data name="GroupMainSetting" xml:space="preserve">
+    <value>Main Setting</value>
+  </data>
+  <data name="GroupSelectLanguage" xml:space="preserve">
+    <value>Select Language</value>
+  </data>
+  <data name="CheckProgramExit" xml:space="preserve">
+    <value>When click the exit, the application will be shutdown.</value>
+  </data>
+  <data name="CheckProgramOther" xml:space="preserve">
+    <value>Share the phone connections with other apk installer programs</value>
+  </data>
+  <data name="CheckProgramTask" xml:space="preserve">
+    <value>When the installation task is finished, ring a bell on the phone</value>
+  </data>
+  <data name="CheckSavePassword" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+  <data name="ChooseLanguage" xml:space="preserve">
+    <value>Choose Language</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="Connected" xml:space="preserve">
+    <value>The device is connected.</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="DataAnalysis" xml:space="preserve">
+    <value>Data Analysis</value>
+  </data>
+  <data name="DeleteTempOnDevice" xml:space="preserve">
+    <value>Delete temp on the device</value>
+  </data>
+  <data name="ExceptionInstallApkOnDevice" xml:space="preserve">
+    <value>Exception was occured while installing apks.</value>
+  </data>
+  <data name="FailToConnect" xml:space="preserve">
+    <value>Fail to connect the device</value>
+  </data>
+  <data name="FailToConnectDetail" xml:space="preserve">
+    <value>Connnection Fail - please check current adb can read the android device</value>
+  </data>
+  <data name="FinishInstallApkOnDevice" xml:space="preserve">
+    <value>Installation completed.</value>
+  </data>
+  <data name="FinishUninstallApkOnDevice" xml:space="preserve">
+    <value>Uninstallation completed.</value>
+  </data>
+  <data name="GroupInstallFinished" xml:space="preserve">
+    <value>Group installation was finished.</value>
+  </data>
+  <data name="InstalledApkOnDevice" xml:space="preserve">
+    <value>'{0}' was installed.</value>
+  </data>
+  <data name="InstalledOnDevice" xml:space="preserve">
+    <value>‘{0}’ installation finished.</value>
+  </data>
+  <data name="InstallingApkOnDevice" xml:space="preserve">
+    <value>Installing '{1}' of '{0}' group...</value>
+  </data>
+  <data name="InstallingIOnNApk" xml:space="preserve">
+    <value>Installing '{0}' ({1}/{2})...</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="LoadingApkOnDevice" xml:space="preserve">
+    <value>Loading '{0}' on the device[{1}/{2}]...</value>
+  </data>
+  <data name="LoadingDeviceInformation" xml:space="preserve">
+    <value>Loading device information...</value>
+  </data>
+  <data name="LoggingNow" xml:space="preserve">
+    <value>Logging on...</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="MSG_NEED_DEVICE" xml:space="preserve">
+    <value>Please connect at least one android device</value>
+  </data>
+  <data name="MSG_STILL_DOWNLOAD" xml:space="preserve">
+    <value>Cannot start while downloading ({0} not completed.)</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>Notice</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OneClickInstall" xml:space="preserve">
+    <value>One-Click Install</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PreparingInstall" xml:space="preserve">
+    <value>Preparing to install apks...</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+  <data name="RequireUsername" xml:space="preserve">
+    <value>Please input the username.</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="ThisMonth" xml:space="preserve">
+    <value>This month</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="UninstallApkFail" xml:space="preserve">
+    <value>Failed to uninstall '{0}'.</value>
+  </data>
+  <data name="UninstalledApkOnDevice" xml:space="preserve">
+    <value>'{0}' was unisntalled.</value>
+  </data>
+  <data name="UninstallingApkOnDevice" xml:space="preserve">
+    <value>Uninstalling '{0}'...</value>
+  </data>
+  <data name="UninstallingIOnNApk" xml:space="preserve">
+    <value>Uninstalling '{0}' ({1}/{2})...</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="ApkInstallList" xml:space="preserve">
+    <value>  Apk Install List</value>
+  </data>
+  <data name="DeviceInstallList" xml:space="preserve">
+    <value>  Device Type List</value>
+  </data>
+  <data name="AllStatistics" xml:space="preserve">
+    <value>All statistics</value>
+  </data>
+  <data name="Level2UserStatistics" xml:space="preserve">
+    <value>Second agent statistics</value>
+  </data>
+  <data name="ProgramMinimized" xml:space="preserve">
+    <value>Program is minimized</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="DeviceBrander" xml:space="preserve">
+    <value>Brand:</value>
+  </data>
+  <data name="DeviceModel" xml:space="preserve">
+    <value>Model:</value>
+  </data>
+  <data name="DeviceManage" xml:space="preserve">
+    <value>Manage</value>
+  </data>
+  <data name="DeviceInstallPosition" xml:space="preserve">
+    <value>Install Position</value>
+  </data>
+  <data name="DeviceInstallAuto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="DeviceInstallPhone" xml:space="preserve">
+    <value>Handphone</value>
+  </data>
+  <data name="DeviceInstallSD" xml:space="preserve">
+    <value>SD Card</value>
+  </data>
+  <data name="DeviceRestart" xml:space="preserve">
+    <value>Restart</value>
+  </data>
+  <data name="DeviceDetail" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="DeviceManageRefresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="DeviceManageAllSelect" xml:space="preserve">
+    <value>Chcek all</value>
+  </data>
+  <data name="DeviceManageAllUnselect" xml:space="preserve">
+    <value>Uncheck all</value>
+  </data>
+  <data name="DeviceManageUninstall" xml:space="preserve">
+    <value>Uninstall</value>
+  </data>
+  <data name="DeviceManageAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="DeviceManageBack" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="DeviceManageApkName" xml:space="preserve">
+    <value>Apk Name</value>
+  </data>
+  <data name="DeviceManageApkVersion" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="DeviceManageApkType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="DeviceManageApkSize" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="DeviceManageApkInstallTime" xml:space="preserve">
+    <value>Install Time</value>
+  </data>
+  <data name="DeviceSharingRetry" xml:space="preserve">
+    <value>Retry</value>
+  </data>
+  <data name="DeviceSharingForceClose" xml:space="preserve">
+    <value>Force Close</value>
+  </data>
+  <data name="DeviceSharingShare" xml:space="preserve">
+    <value>Share Device</value>
+  </data>
+  <data name="DeviceSharingDescription" xml:space="preserve">
+    <value>Turn off this phone assistant, then click[Retry]: </value>
+  </data>
+  <data name="ConfirmExitGroupAction" xml:space="preserve">
+    <value>Exit Action</value>
+  </data>
+  <data name="ConfirmExitDirectExit" xml:space="preserve">
+    <value>Direct Exit</value>
+  </data>
+  <data name="ConfirmExitMinimizeToTray" xml:space="preserve">
+    <value>Minimize to System Tray</value>
+  </data>
+  <data name="ConfirmExitNoRetry" xml:space="preserve">
+    <value>Do Not Prompt</value>
+  </data>
+  <data name="ConfirmExitOk" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="ConfirmExitCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="FirstGradeAgent" xml:space="preserve">
+    <value>Frist grade : </value>
+  </data>
+  <data name="SecondGradeAgent" xml:space="preserve">
+    <value>Second grade : </value>
+  </data>
+  <data name="AlreadyConnected" xml:space="preserve">
+    <value>This equipment has been connected this application</value>
+  </data>
+  <data name="AlreadyConnectedNotAvailable" xml:space="preserve">
+    <value>This equipment has been installed applications, if you are not he who installed application, can be no effect of all actions.</value>
+  </data>
+  <data name="NotExistSDCard" xml:space="preserve">
+    <value>SD Card does not exist.</value>
+  </data>
+  <data name="UnableToLoadApk" xml:space="preserve">
+    <value>Unable to load apk to the device.</value>
+  </data>
+  <data name="UpgradeApkOnDevice" xml:space="preserve">
+    <value>'{0}' was updated.</value>
+  </data>
+  <data name="INSTALL_FAILED_INSUFFICIENT_STORAGE" xml:space="preserve">
+    <value>Install failed because of insufficient storage</value>
+  </data>
+  <data name="NewVersion" xml:space="preserve">
+    <value>New Version</value>
+  </data>
+  <data name="YouCanUpgradeNewVersion" xml:space="preserve">
+    <value>You can upgrade to {0}, Do you want to upgrade application?</value>
+  </data>
+  <data name="Paused" xml:space="preserve">
+    <value>Paused</value>
+  </data>
+  <data name="RebootingNow" xml:space="preserve">
+    <value>Rebooting now...</value>
+  </data>
+  <data name="StopInstall" xml:space="preserve">
+    <value>Installation was stopped</value>
+  </data>
+  <data name="INSTALL_FAILED_ACWF_INCOMPATIBLE" xml:space="preserve">
+    <value>Perhaps storage space is not enough to install.</value>
+  </data>
+  <data name="INSTALL_FAILED_DEXOPT" xml:space="preserve">
+    <value>Fail to parse dex optimization, please check storage space.</value>
+  </data>
+  <data name="INSTALL_FAILED_MEDIA_UNAVAILABLE" xml:space="preserve">
+    <value>Can't find sd card or space is not sufficient</value>
+  </data>
+  <data name="APK_INCORRECT_PWD" xml:space="preserve">
+    <value>Password is invalid, please try again!</value>
+  </data>
+  <data name="CPU_ABIINSTALL_FAILED_MISSING_FEATURE" xml:space="preserve">
+    <value>Used invalid characteristics.</value>
+  </data>
+  <data name="INSTALL_FAILED_CONFLICTING_PROVIDER" xml:space="preserve">
+    <value>Same named content provider exist</value>
+  </data>
+  <data name="INSTALL_FAILED_CONTAINER_ERROR" xml:space="preserve">
+    <value>Failed to access SD card</value>
+  </data>
+  <data name="INSTALL_FAILED_CPU_ABI_INCOMPATIBLE" xml:space="preserve">
+    <value>The version of the local machine code is not compatible</value>
+  </data>
+  <data name="INSTALL_FAILED_DUPLICATE_PACKAGE" xml:space="preserve">
+    <value>Already exist applications with the same name</value>
+  </data>
+  <data name="INSTALL_FAILED_INTERNAL_ERROR" xml:space="preserve">
+    <value>System problem lead to the failure of installation</value>
+  </data>
+  <data name="INSTALL_FAILED_INVALID_APK" xml:space="preserve">
+    <value>Invalid apk</value>
+  </data>
+  <data name="INSTALL_FAILED_INVALID_INSTALL_LOCATION" xml:space="preserve">
+    <value>The installation location is invalid</value>
+  </data>
+  <data name="INSTALL_FAILED_INVALID_URI" xml:space="preserve">
+    <value>Invalid URL</value>
+  </data>
+  <data name="INSTALL_FAILED_MISSING_SHARED_LIBRARY" xml:space="preserve">
+    <value>The required share library has been lost</value>
+  </data>
+  <data name="INSTALL_FAILED_NEWER_SDK" xml:space="preserve">
+    <value>The system version is too new.</value>
+  </data>
+  <data name="INSTALL_FAILED_NO_SHARED_USER" xml:space="preserve">
+    <value>The required share user does not exist</value>
+  </data>
+  <data name="INSTALL_FAILED_OLDER_SDK" xml:space="preserve">
+    <value>The system version is too old</value>
+  </data>
+  <data name="INSTALL_FAILED_REPLACE_COULDNT_DELETE" xml:space="preserve">
+    <value>The required share library is invalid</value>
+  </data>
+  <data name="INSTALL_FAILED_SHARED_USER_INCOMPATIBLE" xml:space="preserve">
+    <value>The required share user sign failed.</value>
+  </data>
+  <data name="INSTALL_FAILED_TEST_ONLY" xml:space="preserve">
+    <value>The caller was not allowed the test procedure of the test</value>
+  </data>
+  <data name="INSTALL_FAILED_UPDATE_INCOMPATIBLE" xml:space="preserve">
+    <value>Version cannot coexist</value>
+  </data>
+</root>
