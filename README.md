@@ -171,7 +171,7 @@ Edit `apkinstaller.ini` to configure:
 **Packet Structure:**
 ```
 ┌─────────────────────┬─────────────────────┬─────────────────────┐
-│ Packet Length (4B) │ Packet Type (4B)   │ Packet Data (Var)   │
+│ Packet Length (4B)  │ Packet Type (4B)    │ Packet Data (Var)   │
 └─────────────────────┴─────────────────────┴─────────────────────┘
 ```
 
