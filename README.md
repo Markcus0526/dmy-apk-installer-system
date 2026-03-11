@@ -1,45 +1,229 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# DMY APK Installer System
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+A comprehensive Android application management system for batch installing APK files to multiple Android devices simultaneously. The system consists of a Windows desktop client, Android agent app, web management portal, and backend services.
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+## System Architecture
 
----
+```
+┌─────────────────┐      ┌──────────────────┐      ┌─────────────────┐
+│   PC Client     │◄────►│  Web Service     │◄────►│  Web Management │
+│ (C# WinForms)   │      │   (WCF)          │      │   Site (MVC)    │
+└────────┬────────┘      └────────┬─────────┘      └─────────────────┘
+         │                       │
+         │                       │
+         ▼                       ▼
+┌─────────────────┐      ┌──────────────────┐
+│  Android Agent  │◄────►│   SQL Database   │
+│   (APK)         │      │                  │
+└─────────────────┘      └──────────────────┘
+```
 
-## Edit a file
+## Components
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+### 1. PC Client (`PC/ApkInstaller/`)
+Windows desktop application for managing APK installations.
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+**Features:**
+- One-click batch APK installation to multiple Android devices
+- Real-time installation progress monitoring
+- Device management (connect, disconnect, status monitoring)
+- APK group management and downloading
+- Device information display (storage space, device model, IMEI)
+- Installed applications listing
+- Auto-uninstall option before installation
+- System tray support with minimize to tray
+- Multi-language support (English, Chinese)
 
----
+**Tech Stack:**
+- C# / .NET Framework
+- Windows Forms (C1.Win.C1Command)
+- SQLite for local caching
+- ADB (Android Debug Bridge) integration
 
-## Create a file
+### 2. Android Agent (`Android/APKAgent/`)
+Android application that runs on target devices to enable remote installation.
 
-Next, you’ll add a new file to this repository.
+**Features:**
+- TCP server for PC communication (port 25000)
+- Device information retrieval (IMEI, storage, model, brand, serial)
+- Installed application listing with icons
+- Screen capture capability
+- Installation completion alarm/notifications
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+**Tech Stack:**
+- Java / Android SDK
+- TCP Socket Communication
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+### 3. Web Management Site (`ManageSite/`)
+ASP.NET MVC website for administrators to manage APK packages.
 
----
+**Features:**
+- APK package upload and management
+- User administration
+- Installation statistics and logs
 
-## Clone a repository
+**Tech Stack:**
+- ASP.NET MVC
+- SQL Server Database
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+### 4. Backend Service (`Service/ApkInstallerService/`)
+WCF service for data operations and business logic.
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
+**Features:**
+- APK data management
+- User authentication and authorization
+- License management
+- Installation logging
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+**Tech Stack:**
+- WCF (Windows Communication Foundation)
+- SQL Server
+
+### 5. Database (`Database/`)
+SQL Server database for storing:
+- User information
+- APK package metadata
+- Installation logs
+- Device information
+
+## Project Structure
+
+```
+dmy-apk-installer-system/
+├── Android/
+│   ├── APKAgent/           # Android Agent App
+│   ├── TCPClient/          # Android TCP Client (testing)
+│   └── TCPServer/          # Android TCP Server (testing)
+├── Database/               # SQL Server database files
+├── Installer/              # Installer project and files
+├── ManageSite/             # ASP.NET MVC Web Application
+│   └── MvcSiteMapProvider/ # SiteMap provider
+├── PC/
+│   ├── ApkInstaller/       # Main PC Client Application
+│   │   ├── ADBWrapper/     # ADB wrapper library
+│   │   ├── ApkPLUpdater/   # APK update module
+│   │   ├── DriverInstaller/# USB Driver installer
+│   │   ├── DriverTools/    # Driver utilities
+│   │   └── MiscUtil/       # Utility classes
+│   ├── android_usb_test/   # USB API testing
+│   └── Patch/              # Patching files
+└── Service/
+    └── ApkInstallerService/ # WCF Backend Service
+```
+
+## Requirements
+
+### PC Client
+- Windows 7 or later
+- .NET Framework 4.0+
+- Android Debug Bridge (ADB) drivers
+- SQLite
+
+### Android Agent
+- Android 2.3 (Gingerbread) or later
+- ROOT access required for full functionality
+
+### For Development
+- Visual Studio 2010+
+- Android SDK
+- SQL Server 2008+
+
+## Installation & Setup
+
+### 1. Install USB Drivers
+Install the appropriate USB drivers for your Android devices on the PC.
+
+### 2. Deploy Android Agent
+Install `APKAgent.apk` on all target Android devices:
+```bash
+adb install APKAgent.apk
+```
+
+### 3. Configure PC Client
+Edit `apkinstaller.ini` to configure:
+- Server URL
+- Authentication token
+- Local storage paths
+
+### 4. Start Services
+1. Start the WCF Service
+2. Start the Web Management Site (IIS)
+3. Run the PC Client application
+
+## Usage
+
+### PC Client Operations
+1. **Connect Devices**: Connect Android devices via USB, the client will automatically detect them
+2. **Select APK Group**: Choose an APK group from the server
+3. **Download APKs**: APKs will be automatically downloaded
+4. **One-Click Install**: Click "One-Click Install" to install all APKs to selected devices
+5. **Monitor Progress**: View real-time installation status for each device
+
+### Device Panel Controls
+- **Play**: Start installation
+- **Pause**: Pause current installation
+- **Stop**: Stop current installation
+
+## Communication Protocol
+
+### PC ↔ Android Agent (TCP Port 25000)
+
+**Packet Structure:**
+```
+┌─────────────────────┬─────────────────────┬─────────────────────┐
+│ Packet Length (4B) │ Packet Type (4B)   │ Packet Data (Var)   │
+└─────────────────────┴─────────────────────┴─────────────────────┘
+```
+
+**Packet Types:**
+| Code   | Description                      |
+|--------|----------------------------------|
+| CONN   | Connection request               |
+| DCON   | Disconnect                       |
+| SDFS   | SD Card free space               |
+| SDTS   | SD Card total space              |
+| IMFS   | Internal memory free space       |
+| IMTS   | Internal memory total space      |
+| IDPL   | Installed program list           |
+| CASC   | Screen capture                   |
+| INFO   | Device unique information        |
+| AIED   | APK install completed            |
+
+## API Endpoints (Web Service)
+
+### APK Operations
+- `GetApkGroupList` - Get list of APK groups
+- `GetApkList` - Get APK files in a group
+- `InsertApkInstallLog` - Log installation result
+- `InsertApkUpdateLog` - Log APK update
+
+### License Operations
+- `ApkLicenseCheck` - Validate license
+
+## Configuration Files
+
+- `apkinstaller.ini` - Main configuration file
+- `ConnStrings.config` - Database connection strings
+- `Web.config` - Web application configuration
+
+## License
+
+This project is provided as-is for educational and development purposes.
+
+## Troubleshooting
+
+### Device Not Detected
+1. Check USB debugging is enabled on Android device
+2. Install proper USB drivers
+3. Restart ADB server: `adb kill-server && adb start-server`
+
+### Installation Fails
+1. Check device has sufficient storage space
+2. Verify APK files are valid
+3. Ensure device has required permissions
+
+### Connection Issues
+1. Check firewall settings
+2. Verify network connectivity
+3. Ensure correct server URL configuration
+
